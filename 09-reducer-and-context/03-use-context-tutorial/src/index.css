@@ -1,0 +1,13 @@
+* {
+    font-family: sans-serif;
+}
+div {
+    box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.298);
+}
+button {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border: 2px solid gray;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}

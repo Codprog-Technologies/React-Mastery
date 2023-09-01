@@ -1,0 +1,52 @@
+.cartImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    mix-blend-mode: darken;
+}
+
+.cartItem {
+    border-bottom: 1px solid #cdcdcd;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-bottom: 1.5rem;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.imgAndTitle {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.otherControls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quantityDisplay {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.qtyInput button,
+.removeItemBtn {
+    border: none;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .cartItem {
+        grid-template-columns: 1fr;
+        margin-bottom: 3rem;
+    }
+    .otherControls {
+        justify-content: start;
+        gap: 3rem;
+    }
+}
