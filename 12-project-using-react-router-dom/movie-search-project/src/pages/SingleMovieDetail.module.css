@@ -1,0 +1,31 @@
+.movieDetail {
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+.movieDetail h1,
+.movieDetail h2,
+.movieDetail h3,
+.movieDetail h4 {
+    margin-bottom: 0.5em;
+}
+
+.infoPara {
+    /* border: 2px solid red; */
+    display: flex;
+    margin: 1rem 0;
+}
+.key {
+    width: 200px;
+    /* border: 2px solid green; */
+}
+.bigInfo {
+    margin: 1rem auto;
+}
+
+@media screen and (max-width: 700px) {
+    .movieDetail {
+        grid-template-columns: 1fr;
+    }
+}

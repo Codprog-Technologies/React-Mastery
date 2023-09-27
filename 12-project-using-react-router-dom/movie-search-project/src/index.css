@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --hue: 199;
+    --blue-color: hsl(var(--hue), 64%, 44%);
+    --dark-blue-color: hsl(var(--hue), 90%, 35%);
+    --white-color: hsl(var(--hue), 64%, 90%);
+    --pure-white-color: hsl(var(--hue), 100%, 100%);
+    --black-color: hsl(var(--hue), 64%, 10%);
+    --grey-color: hsl(var(--hue), 24%, 35%);
+}
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 1rem auto;
+    width: 90%;
+}
+
+.loadingSpinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
