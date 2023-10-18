@@ -1,0 +1,19 @@
+body {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.b-2 {
+    border: 2px solid black;
+}
+
+.strike {
+    text-decoration: line-through;
+}
