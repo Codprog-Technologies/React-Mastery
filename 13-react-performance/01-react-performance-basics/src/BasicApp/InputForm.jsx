@@ -1,7 +1,13 @@
-function InputForm({ username, setUsername }) {
+import { useState } from "react";
+
+function InputForm({ children }) {
+    const [username, setUsername] = useState("");
     console.log("input form rendered");
+    function handleSubmit(e) {
+        e.preventDefault();
+    }
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <input
                 type="text"
                 name="username"
@@ -10,6 +16,8 @@ function InputForm({ username, setUsername }) {
                 value={username}
                 autoComplete="off"
             />
+            {children}
+            <button onClick={() => setUsername("")}>Clear Input</button>
         </form>
     );
 }
